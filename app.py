@@ -106,10 +106,8 @@ Nie przekraczaj 200 słów. Odpowiedz po polsku."""
                 "Content-Type": "application/json",
             },
             data=json.dumps({
-                "model": random.choice([
-                    "nvidia/nemotron-3-super-120b-a12b:free",  # Darmowy model dobry na początek
-                    "z-ai/glm-4.5-air:free",  # Kolejny darmowy model, różne podejście do generowania tekstu
-                ]),
+                "model": "nvidia/nemotron-3-super-120b-a12b:free",  # Darmowy model dobry na początek
+                    
                 "messages": [
                     {
                         "role": "user",
