@@ -1,0 +1,133 @@
+:root {
+--text: #050315;
+--background: #e1e8e0;
+--primary: #2868df;
+--secondary: #bacff4;
+--accent: #84e317;
+
+
+}
+
+.stApp {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3 {
+    color: var(--primary);
+    text-align: center;
+}
+
+.stButton>button {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stButton>button:hover {
+    background-color: var(--secondary);
+    color: var(--text);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.stTextInput>div>div>input {
+    border-radius: 10px;
+    border: 2px solid var(--secondary);
+    padding: 0.5rem;
+    background-color: white;
+    color: var(--text);
+}
+
+.stTextInput>div>div>input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(166,253,63,0.2);
+}
+
+/* Card styling */
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 0.5rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--primary);
+    height: 100%; /* make columns equal height */
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card .interpretation {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: var(--text);
+    margin-bottom: 1rem;
+    flex-grow: 1; /* take available space */
+}
+
+.card hr {
+    border: none;
+    border-top: 1px dashed var(--secondary);
+    margin: 1rem 0;
+}
+
+.card .info {
+    font-size: 0.9em;
+    color: var(--text);
+}
+
+.card .info strong {
+    color: var(--primary);
+}
+
+/* AI response container */
+.ai-response {
+    background-color: var(--secondary);
+    color: var(--text);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent);
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: var(--text);
+    opacity: 0.9;
+    font-size: 0.9em;
+    margin-top: 2rem;
+}
+
+/* Spinner customization */
+.stSpinner > div {
+    border-top-color: var(--primary) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stColumns {
+        flex-direction: column;
+    }
+    .stColumn {
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+}
