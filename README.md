@@ -23,51 +23,14 @@ Każda karta ma dwie interpretacje: prostą i odwróconą, które są losowo wyb
 - [Streamlit](https://streamlit.io/) - framework do tworzenia aplikacji webowych w Pythonie
 - [Pandas](https://pandas.pydata.org/) - biblioteka do analizy danych (do wczytania talii kart z CSV)
 
-## Instalacja i uruchomienie lokalne
-
-1. Sklonuj to repozytorium:
-   ```bash
-   git clone <adres-repozytorium>
-   cd PMOrot
-   ```
-
-2. Zainstaluj wymagane zależności:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Uruchom aplikację:
-   ```bash
-   streamlit run app.py
-   ```
-   lub
-   ```bash
-   python -m streamlit run app.py
-   ```
-
-4. Aplikacja będzie dostępna pod adresem: http://localhost:8501
-
-## Wdrożenie na Streamlit Community Cloud
-
-Aplikacja może być łatwo wdrożona bezpłatnie na [Streamlit Community Cloud](https://streamlit.io/cloud):
-
-1. Umieść to repozytorium na GitHubie
-2. Przejdź na [share.streamlit.io](https://share.streamlit.io/)
-3. Połącz swoje konto GitHub
-4. Wybierz repozytorium `PMOrot` i gałąź `main`
-5. Wskaż plik `app.py` jako główny plik aplikacji
-6. Kliknij "Deploy!"
-
-Po wdrożeniu aplikacja będzie dostępna pod adresem: `https://nazwa-twojej-aplikacji.streamlit.app`
+4. Aplikacja będzie dostępna pod adresem: [https://pmorot.streamlit.app/](https://pmorot.streamlit.app/)
 
 ## Struktura plików
 
 - `app.py` - główna aplikacja Streamlit
 - `pmorot.csv` - talii kart biznesowych z opisami
 - `requirements.txt` - zależności Pythonowe
-- `.gitignore` - standardowe wykluczenia dla projektów Pythonowych
 - `README.md` - ten plik
-- `TODO.md` - plan rozwoju (wewnętrzny)
 
 ## O talii kart
 
@@ -93,4 +56,4 @@ Każda karta ma:
 
 ---
 
-*PMOrot - parce że nawet najpoważniejsze projekty potrzebują odrobinę humoru.*
+*PMOrot - nawet najpoważniejsze projekty potrzebują odrobinę humoru.*
